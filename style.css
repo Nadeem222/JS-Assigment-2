@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    
+}
+.container{
+    padding: 30px;
+}
+.greetMsg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+h1{
+    margin: 0 auto;
+}
+.calculator{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(#0000, #cecece);
+    gap: 5px;
+}
+.calculator > input, .calculator> select{
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    padding: 5px;
+   
+}
+.row{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card  {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+}
+h4{
+    text-align: center;
+}
