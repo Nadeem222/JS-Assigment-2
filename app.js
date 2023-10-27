@@ -29,34 +29,34 @@
 // alert("Division of " + " "+num1+" " +"and " + " " + num2+" " +"is" + " " + result);
 // document.write("Division of " + " "+num1+" " +"and " + " " + num2+" " +"is" + " " + result );
 
-function calculate(){
+function calculate() {
 
-    var num1 = parseFloat(document.getElementById('num1').value);
-    var oprator = document.getElementById('operator').value;
-    var num2 = parseFloat(document.getElementById('num2').value);
-    var result = "";
-    
-    
-    
-     if( oprator === "+"){
-        result = `Sum of ${num1} and ${num2} is ${num1 + num2}.`
-     }else if (oprator === "-" ){
-        result = `Substraction of ${num1} and ${num2} is ${num1 - num2}.`
-     }else if( oprator === "/"){
-        if( num2 !== 0){
-            result = `Division of ${num1} and ${num2} is ${num1 / num2}.`
-        }else{
-            result = "Division by zero not allowed"
-        }
-     }else if(oprator === "%"){
-        result = `Modulus of ${num1} and ${num2} is ${num1 % num2}.`
-     }else if(oprator === "*"){
-        result = `Multiplication of ${num1} and ${num2} is ${num1 * num2}.`
-     }else {
-        result = "Invalid operator. Please use +, -, /, %, or *.";
-    }
-    
-    document.querySelector("#result").innerHTML = result;
+   var num1 = parseFloat(document.getElementById('num1').value);
+   var oprator = document.getElementById('operator').value;
+   var num2 = parseFloat(document.getElementById('num2').value);
+   var result = "";
+
+
+
+   if (oprator === "+") {
+      result = `Sum of ${num1} and ${num2} is ${num1 + num2}.`
+   } else if (oprator === "-") {
+      result = `Substraction of ${num1} and ${num2} is ${num1 - num2}.`
+   } else if (oprator === "/") {
+      if (num2 !== 0) {
+         result = `Division of ${num1} and ${num2} is ${num1 / num2}.`
+      } else {
+         result = "Division by zero not allowed"
+      }
+   } else if (oprator === "%") {
+      result = `Modulus of ${num1} and ${num2} is ${num1 % num2}.`
+   } else if (oprator === "*") {
+      result = `Multiplication of ${num1} and ${num2} is ${num1 * num2}.`
+   } else {
+      result = "Invalid operator. Please use +, -, /, %, or *.";
+   }
+
+   document.querySelector("#result").innerHTML = result;
 }
 
 // QUestion 3
@@ -117,7 +117,7 @@ document.querySelector("#remainder").innerHTML = ("The remainder is : " + remain
 
 // for (i = 1 ; i <= 10 ; i++) {
 //    document.write(`${number} * ${i} = ${number*i} <br>`)
-   
+
 // }
 
 
@@ -166,34 +166,34 @@ document.querySelector("#remainder").innerHTML = ("The remainder is : " + remain
 // //Chapter 5  Question 8 Store total marks & marks obtained by a student in 2variables. Compute the percentage & show the result inyour browser
 
 
-var totalMarks2 = +prompt('Enter Your Total Marks');
+// var totalMarks2 = +prompt('Enter Your Total Marks');
 
-var obtainedMarks = +prompt("Enter Your Obtained Marks");
+// var obtainedMarks = +prompt("Enter Your Obtained Marks");
 
-var percentage = (obtainedMarks / totalMarks2) * 100;
-var grade = ""
+// var percentage = (obtainedMarks / totalMarks2) * 100;
+// var grade = ""
 
-document.write('Total Marks :' + " "+ totalMarks2 + "<br>");
+// document.write('Total Marks :' + " "+ totalMarks2 + "<br>");
 
-document.write("Marks obtained :" + " " + obtainedMarks+ "<br>");
+// document.write("Marks obtained :" + " " + obtainedMarks+ "<br>");
 
-document.write("Percentage :" + " " + percentage + "%" + "<br>");
+// document.write("Percentage :" + " " + percentage + "%" + "<br>");
 
-if (percentage <= 40){
-   grade = "Failed"
-}else if(percentage <= 50){
-   grade = "D"
-}else if(percentage <= 60 ){
-   grade = "C"
-}else if(percentage <= 70){
-   grade = "B"
-}else if(percentage <= 80){
-   grade = "A"
-}else if(percentage <= 100){
-   grade = "A+"
-};
+// if (percentage <= 40){
+//    grade = "Failed"
+// }else if(percentage <= 50){
+//    grade = "D"
+// }else if(percentage <= 60 ){
+//    grade = "C"
+// }else if(percentage <= 70){
+//    grade = "B"
+// }else if(percentage <= 80){
+//    grade = "A"
+// }else if(percentage <= 100){
+//    grade = "A+"
+// };
 
-document.write("Grade :" +" " + grade + "<br>");
+// document.write("Grade :" +" " + grade + "<br>");
 
 
 // // Chapter 5 Question 9 Assume we have 10 US dollars & 25 Saudi Riyals. Write ascript to convert the total currency to Pakistani Rupees.Perform all calculations in a single expression.(Exchange rates : 1 US Dollar = 104.80 Pakistani Rupeeand 1 Saudi Riyal = 28 Pakistani Rupee)
@@ -238,31 +238,31 @@ var expectAge = 60;
 
 var amountSnack = 2;
 
-var yourNeed = ( expectAge - currentAge) * amountSnack;
-document.querySelector("#snacks").innerHTML=("Favourite Snacks :" + " " + snacks + "<br>");
-document.querySelector("#currentAge").innerHTML=("Current Age :" + " " + currentAge  + "<br>");
-document.querySelector("#estimateAge").innerHTML=("Estimated Maximum Age :" + " " + expectAge + "<br>")
-document.querySelector("#lifeSpan").innerHTML=(`You will need ${yourNeed} to last until the ripe old age of ${expectAge}`);
+var yourNeed = (expectAge - currentAge) * amountSnack;
+document.querySelector("#snacks").innerHTML = ("Favourite Snacks :" + " " + snacks + "<br>");
+document.querySelector("#currentAge").innerHTML = ("Current Age :" + " " + currentAge + "<br>");
+document.querySelector("#estimateAge").innerHTML = ("Estimated Maximum Age :" + " " + expectAge + "<br>")
+document.querySelector("#lifeSpan").innerHTML = (`You will need ${yourNeed} to last until the ripe old age of ${expectAge}`);
 
 
 //Chapter 6 Question 1 Write a program to take a number in a variable, do therequired arithmetic to display the following result in your browser:
 
 var a = 10;
 
-document.write("Result " + "<br>" +"The Value of a is :" + a + "<br>"  + "..................." + "<br>");
+document.write("Result " + "<br>" + "The Value of a is :" + a + "<br>" + "..................." + "<br>");
 
 document.write("The Value of ++a is :" + " " + ++a + "<br>");
-document.write("Now the value of a is :" + " " + a + "<br>"+ "<br>");
+document.write("Now the value of a is :" + " " + a + "<br>" + "<br>");
 
 document.write("The value of a++ is :" + " " + a++ + "<br>");
-document.write("Now the value of a is :" + " " + a + "<br>"+ "<br>");
+document.write("Now the value of a is :" + " " + a + "<br>" + "<br>");
 
 document.write("The value of --a is :" + " " + --a + "<br>")
-document.write("Now the value of a is :" + " " + a + "<br>"+ "<br>");
+document.write("Now the value of a is :" + " " + a + "<br>" + "<br>");
 
 
 document.write("The value of a-- is :" + " " + a-- + "<br>");
-document.write("Now the value of a is :" + " " + a + "<br>"+ "<br>");
+document.write("Now the value of a is :" + " " + a + "<br>" + "<br>");
 
 
 // Chapter 6 Question 2.What will be the output in variables a, b & result after
@@ -280,52 +280,86 @@ document.write("Now the value of a is :" + " " + a + "<br>"+ "<br>");
 var a = 2, b = 1;
 var result = --a - --b + ++b + b--;
 
-document.write("a is "  + a + "<br>"+ "b is " + b  +"<br>"+ "  and result is " + result);
+document.write("a is " + a + "<br>" + "b is " + b + "<br>" + "  and result is " + result);
 
 var greet = document.getElementById(greet);
 
 var userName = prompt("Enter Your Name")
 
-if (userName !== null && userName !== ""){
-    document.querySelector("#greet").innerHTML = ("Hello!" +" " +  userName + " Welcome to my page!")
-}else{
-    document.querySelector("#greet").innerHTML = ("Hello! Welcome to My page")
+if (userName !== null && userName !== "") {
+   document.querySelector("#greet").innerHTML = ("Hello!" + " " + userName + " Welcome to my page!")
+} else {
+   document.querySelector("#greet").innerHTML = ("Hello! Welcome to My page")
 }
 
 // Chapter 6 Multiplication Table
 
-function printTable(){
-    var table = parseInt(document.getElementById("input3").value) || 5;
-    var tableArea = document.getElementById("result1");
-    
-    tableArea.innerHTML = "";
+function printTable() {
+   var table = parseInt(document.getElementById("input3").value) || 5;
+   var tableArea = document.getElementById("result1");
 
-    for(i = 1 ; i <= 10 ; i++){
-        tableArea.innerHTML += `${table} * ${i} = ${table * i} <br>`
-    }
+   tableArea.innerHTML = "";
+
+   for (i = 1; i <= 10; i++) {
+      tableArea.innerHTML += `${table} * ${i} = ${table * i} <br>`
+   }
 
 }
 
 
-var eng = +prompt("Enter your English Obatined Marks");
+// var eng = +prompt("Enter your English Obatined Marks out of 100");
 
-var urdu = +prompt("Enter your urdu Obatined Marks");
+// var urdu = +prompt("Enter your urdu Obatined Marks out of 100");
 
-var math = +prompt("Enter your Math Obatined Marks");
+// var math = +prompt("Enter your Math Obatined Marks out of 100");
 
-var totalMarks1 = eng + urdu + math ;
+// var totalMarks1 = eng + urdu + math ;
 
-var percentage1 = Math.round((totalMarks1 / 300)* 100);
-var engPer = Math.round((eng / 100)* 100);
-var urduPer = Math.round((urdu / 100)* 100);
-var mathPer = Math.round((math / 100)* 100);
+// var percentage1 = Math.round((totalMarks1 / 300)* 100);
+// var engPer = Math.round((eng / 100)* 100);
+// var urduPer = Math.round((urdu / 100)* 100);
+// var mathPer = Math.round((math / 100)* 100);
 
-document.querySelector("#english").innerHTML= eng;
-document.querySelector("#urdu").innerHTML= urdu;
-document.querySelector("#math").innerHTML= math;
-document.querySelector("#totalPercentage").innerHTML = "<h5>" +percentage1 + "%" + "</h5>";
-document.querySelector("#englishPer").innerHTML = engPer + "%";
-document.querySelector("#urduPer").innerHTML = urduPer + "%";
-document.querySelector("#mathPer").innerHTML =  mathPer + "%";
+// document.querySelector("#english").innerHTML= eng;
+// document.querySelector("#urdu").innerHTML= urdu;
+// document.querySelector("#math").innerHTML= math;
+// document.querySelector("#totalPercentage").innerHTML = "<h5>" +percentage1 + "%" + "</h5>";
+// document.querySelector("#englishPer").innerHTML = engPer + "%";
+// document.querySelector("#urduPer").innerHTML = urduPer + "%";
+// document.querySelector("#mathPer").innerHTML =  mathPer + "%";
 
-document.querySelector("#obtainedMarks").innerHTML = "<h5>"+ totalMarks1 +"</h5>";
+// document.querySelector("#obtainedMarks").innerHTML = "<h5>"+ totalMarks1 +"</h5>";
+
+
+var city = prompt("Enter your city name");
+var gender = prompt("Enter your gender");
+
+if (city.toLocaleLowerCase() == "karachi") {
+   if (gender.toLocaleLowerCase() === "male") {
+      swal("Hello Sir !", "Welcome to Karachi! The City Of Lights!");
+   } else if (gender.toLocaleLowerCase() === "female") {
+      swal("Hello Madam !", "Welcome to Karachi! The City Of Lights!")
+   } else {
+      swal("Hello !",)
+   }
+} else {
+   if (gender.toLowerCase() === "male") {
+      swal("Hello Sir", "Welcome to " + city + "!");
+   } else if (gender && gender.toLowerCase() === "female") {
+      swal("Hello Madam", "Welcome to " + city + "!");
+   } else {
+      swal("Hello", "Welcome to " + city + "!");
+   }
+};
+
+// var signalInstruction = prompt("Please write traffic signal color");
+
+// if (signalInstruction === "red"){
+//    swal("Must Stop")
+// }else if (signalInstruction === "yellow"){
+//    swal("Ready to Move")
+// }else if(signalInstruction === "green"){
+//    swal("Move On")
+// }else{
+//    swal("Please Enter a valid color")
+// };
