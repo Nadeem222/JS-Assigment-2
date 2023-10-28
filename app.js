@@ -307,28 +307,29 @@ function printTable() {
 }
 
 
-// var eng = +prompt("Enter your English Obatined Marks out of 100");
+var eng = +prompt("Enter your English Obatined Marks out of 100");
 
-// var urdu = +prompt("Enter your urdu Obatined Marks out of 100");
+var urdu = +prompt("Enter your urdu Obatined Marks out of 100");
 
-// var math = +prompt("Enter your Math Obatined Marks out of 100");
+var math = +prompt("Enter your Math Obatined Marks out of 100");
 
-// var totalMarks1 = eng + urdu + math ;
+var totalMarks1 = eng + urdu + math ;
 
-// var percentage1 = Math.round((totalMarks1 / 300)* 100);
-// var engPer = Math.round((eng / 100)* 100);
-// var urduPer = Math.round((urdu / 100)* 100);
-// var mathPer = Math.round((math / 100)* 100);
+var percentage1 = Math.round((totalMarks1 / 300)* 100);
+var engPer = Math.round((eng / 100)* 100);
+var urduPer = Math.round((urdu / 100)* 100);
+var mathPer = Math.round((math / 100)* 100);
 
-// document.querySelector("#english").innerHTML= eng;
-// document.querySelector("#urdu").innerHTML= urdu;
-// document.querySelector("#math").innerHTML= math;
-// document.querySelector("#totalPercentage").innerHTML = "<h5>" +percentage1 + "%" + "</h5>";
-// document.querySelector("#englishPer").innerHTML = engPer + "%";
-// document.querySelector("#urduPer").innerHTML = urduPer + "%";
-// document.querySelector("#mathPer").innerHTML =  mathPer + "%";
 
-// document.querySelector("#obtainedMarks").innerHTML = "<h5>"+ totalMarks1 +"</h5>";
+document.querySelector("#english").innerHTML= eng;
+document.querySelector("#urdu").innerHTML= urdu;
+document.querySelector("#math").innerHTML= math;
+document.querySelector("#totalPercentage").innerHTML = "<h5>" +percentage1 + "%" + "</h5>";
+document.querySelector("#englishPer").innerHTML = engPer + "%";
+document.querySelector("#urduPer").innerHTML = urduPer + "%";
+document.querySelector("#mathPer").innerHTML =  mathPer + "%";
+
+document.querySelector("#obtainedMarks").innerHTML = "<h5>"+ totalMarks1 +"</h5>";
 
 
 var city = prompt("Enter your city name");
@@ -363,3 +364,81 @@ if (city.toLocaleLowerCase() == "karachi") {
 // }else{
 //    swal("Please Enter a valid color")
 // };
+
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }
+
+// var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }
+// var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// }
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// }
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// }
+// if (true){
+// alert("True");
+// }
+// if (false){
+// alert("False");
+// }
+
+// if("car" < "cat"){
+// alert("car is smaller than cat");
+// }
+
+var secretNumber = Math.floor(Math.random() * 10) + 1;
+var guess = +prompt("Enter your num between 1 to 10");
+console.log(secretNumber)
+if (guess === secretNumber){
+   alert("Bingo! Correct answer")
+}else if(guess === secretNumber -1 || guess === secretNumber +1){
+   alert("Unlucky You just missed that")
+}else{
+   alert("Better Luck Next Time")
+};
+
+var num6 = +prompt("Enter A number0");
+
+if (num6 % 3 === 0){
+   alert(`${num6} is divisible by 3`)
+}else{
+   alert(`${num6} is not divible by 3`)
+};
+
+var num7 = +prompt("Enter Any Number for check the given number is even or odd");
+
+if (num7 % 2 === 0){
+   alert(`${num7} is Even Number `);
+}else{
+   alert(`${num7} is odd Number`);
+};
+
+var temperature = +prompt("Enter weather temperature");
+
+if (temperature > 40){
+   alert("Its Too hot outside")
+}else if(temperature > 30){
+   alert("The Weather Today is Normal")
+}else if(temperature > 20){
+   alert("Today’s Weather is cool.")
+}else if(temperature > 10){
+   alert("OMG! Today’s weather is so Cool.")
+}
